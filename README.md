@@ -9,14 +9,19 @@
 - Form validation => use formik library for the validation in react
 - useRef hook
 
-//How to take input data(email password ) from the form 
-1. you can use state varibale and bind that varibale along with the input box as soon as type on the input box the state variable will change => create state variable for email name password 
-2. you can use the reference of those input boxes => useRef
+    //How to take input data(email password ) from the form 
+    1. you can use state varibale and bind that varibale along with the input box as soon as type on the input box the state variable will change => create state variable for email name password 
+    2. you can use the reference of those input boxes => useRef
+- FireBase Setup
+- Autentication (using firebase for the authentication) 
+configured the project on the FireBase and you can also deploy the project on the firebase 
+- create SignUp User account 
+
+"Reading Documentation is a superpower of a developer"
 
 
 
-
-**Fatures**
+**Features**
 - Login/Sign Up
     - Sign In/ SignUp form
     - redirects to Browse Page
