@@ -3,8 +3,9 @@
 - using vite configured react
 - configured tailwindCSS
 - Header
-Login Form
-
+- Login Form
+- Sign up form (using same form)
+- validation => use formik library for the validation in react
 
 **Fatures**
 - Login/Sign Up
