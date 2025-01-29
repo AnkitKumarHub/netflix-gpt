@@ -7,15 +7,13 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import  {addUser} from "../utils/userSlice";
-
+import { addUser } from "../utils/userSlice";
+import { USER_AVATAR, Netflix_Background } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const name = useRef(null);
@@ -57,8 +55,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL:
-              "https://media.licdn.com/dms/image/v2/D4D03AQE-9PMVbemDzw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1732374498460?e=1743638400&v=beta&t=w9b-BN8cCiatdBvqqmISlPgaAU5Qpis_Ili8d25whmw",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               // Profile updated!
@@ -71,7 +68,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               // An error occurred
@@ -93,8 +89,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
-          navigate("/browse");
+          // console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -110,7 +105,7 @@ const Login = () => {
       <div className="absolute inset-0 ">
         <img
           className="w-full h-full object-cover"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/7a8c0067-a424-4e04-85f8-9e25a49a86ed/web/IN-en-20250120-TRIFECTA-perspective_860a95da-c386-446e-af83-fef8ddd80803_large.jpg"
+          src={Netflix_Background}
           alt="Logo"
         />
       </div>

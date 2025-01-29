@@ -33,6 +33,10 @@ configured the project on the FireBase and you can also deploy the project on th
 
 - SignOut functionality
 - updated Profile
+- BugFix: Sign Up user displayName and profile picture update
+- BugFix (routing Bugs => if the user is not logged in Redirect /browse to Login Page and vice-versa  => if i am login already then if i access /login it should redirect to /browse and same without login i should not acces /browse )
+- unsubscribed to the onAuthStateChanged callback
+- Adding hardcoded value to the constant file 
 
 
 
