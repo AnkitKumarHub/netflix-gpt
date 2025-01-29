@@ -1,3 +1,4 @@
+"Reading Documentation is a superpower of a developer"
 # Netflix GPT
 
 - using vite configured react
@@ -16,8 +17,26 @@
 - Autentication (using firebase for the authentication) 
 configured the project on the FireBase and you can also deploy the project on the firebase 
 - create SignUp User account 
+- verify SignIn User
+- Pushing the user info to the redux store => so we can use it anywhere
+- SetUp ReDux Store
 
-"Reading Documentation is a superpower of a developer"
+=> created a store
+=> created a slice
+=> and then added the sliceReducer onto the store
+=> then providing my store
+    appStore.js  
+    userSlice.js 
+    and then wrap the body inside the <Provider> <Body> <Provider/> in app.js(root)
+
+- As sooon as user signIn/signUp i want to update the Store/userSlice with that user information => we have to write the dipatch action in signIn & SignUp & signOut also => so we are going to use the utility provided by the firebase which is known as "onAuthStateChanged" API => this is called whenever the authentication state is changed (signIn signOut => this will called automatically )
+
+- SignOut functionality
+- updated Profile
+
+
+
+
 
 
 
