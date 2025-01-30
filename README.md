@@ -50,6 +50,12 @@ configured the project on the FireBase and you can also deploy the project on th
 - update Store with Trailer video data
 - Embeded the Youtube video and make it autoPlay and mute and on loop
 
+Creating Movie Suggestions List
+- Build secondary component
+
+Showing Popular Movies List on Browse Page
+ 
+
 
 - BUILLDING BROWSE PAGES UI
 <!-- 
@@ -62,7 +68,14 @@ configured the project on the FireBase and you can also deploy the project on th
 -->
 
 
+- Builing secondary container 
+<!-- 
+    moviesList - popular
+    moviesList - Now Playing
+    moviesList - Trending
+    moviesList - Horror 
 
+ -->
 
 
 

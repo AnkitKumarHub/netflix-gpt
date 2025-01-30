@@ -12,7 +12,7 @@ const VideoTitle = ({ title, overview }) => {
   };
 
   return (
-    <div className="aspect-video absolute w-screen text-white bg-gradient-to-r from-slate-950 p-8 transition-all duration-500 ease-in-out">
+    <div className="aspect-video absolute w-screen text-white bg-gradient-to-r from-slate-950 p-8 transition-all duration-500 ease-in-out ">
       <h1 className="text-2xl mt-16 md:mt-52 md:text-5xl md:mx-32 mx-8 font-bold">
         {title}
       </h1>
