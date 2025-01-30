@@ -34,9 +34,26 @@ configured the project on the FireBase and you can also deploy the project on th
 - SignOut functionality
 - updated Profile
 - BugFix: Sign Up user displayName and profile picture update
+
+# Day-2
 - BugFix (routing Bugs => if the user is not logged in Redirect /browse to Login Page and vice-versa  => if i am login already then if i access /login it should redirect to /browse and same without login i should not acces /browse )
 - unsubscribed to the onAuthStateChanged callback
 - Adding hardcoded value to the constant file 
+- Register TMDB Api & create an app & get access token 
+- Get data from TMDB now playing movies list API
+- Adding movie data to the store (movieSlice)
+- Creating Your own custom Hooks
+
+
+- BUILLDING BROWSE PAGES UI
+<!-- 
+    maincontainer 
+        - VideBackground 
+        - VideoTitle 
+    SecondaryConatiner
+        - MoviesList * n
+        - cards * n 
+ -->
 
 
 
@@ -68,5 +85,10 @@ configured the project on the FireBase and you can also deploy the project on th
 
 setup of routing 
 npm i -D react-router-dom
+
+Ques=> why my API were called 2 times?
+this basically happens because of React App Strict Mode if you remove strict mode it will be called once => and in strict it happens only for your localProject  
+
+ANS => React does extra rendering of your component to check for some inconsisitency b/w your calls and this happens in development mode only and it will throw an error if any inconsistency is found.
 
 
