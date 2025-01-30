@@ -54,6 +54,11 @@ Creating Movie Suggestions List
 - Build secondary component
 
 Showing Popular Movies List on Browse Page
+- build Movie List 
+- Build Movie Card 
+- TMDB Image CDN url
+- custom Hooks for different types of movies
+
  
 
 
