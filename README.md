@@ -42,7 +42,13 @@ configured the project on the FireBase and you can also deploy the project on th
 - Register TMDB Api & create an app & get access token 
 - Get data from TMDB now playing movies list API
 - Adding movie data to the store (movieSlice)
-- Creating Your own custom Hooks
+- Created custom Hooks for the NowPlaying Movies
+- create movieSlice
+- update store with the movies data
+- planning for the mainContainer & secondary container 
+- fetch data for trailer vides
+- update Store with Trailer video data
+- Embeded the Youtube video and make it autoPlay and mute and on loop
 
 
 - BUILLDING BROWSE PAGES UI
@@ -53,7 +59,7 @@ configured the project on the FireBase and you can also deploy the project on th
     SecondaryConatiner
         - MoviesList * n
         - cards * n 
- -->
+-->
 
 
 
