@@ -118,3 +118,7 @@ ANS => React does extra rendering of your component to check for some inconsisit
 
 # Day-3 
 - GPT search feature 
+
+Memoization - every times it makes an API call 
+
+- if the useNowPlayingMovies (now playing movies) is already present in the store then i will not fetch the data again and make another API call  => it will save lot of api

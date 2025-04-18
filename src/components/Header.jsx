@@ -74,9 +74,9 @@ const Header = () => {
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
-                <option  key={lang.identifier} value={lang.identifier}>
+                <option key={lang.identifier} value={lang.identifier}>
                   {lang.name}
-                </option> 
+                </option>
               ))}
             </select>
           )}
@@ -84,7 +84,7 @@ const Header = () => {
             className="font-semibold text-xl cursor-pointer text-white mx py-2 px-4 my-2 mx-4 bg-purple-500 rounded-lg"
             onClick={handleGptSearchClick}
           >
-            {showGptSearch ? "Home" : "Search"} 
+            {showGptSearch ? "Home" : "Search"}
           </button>
           <img className="w-12  h-12" src={user.photoURL} alt="usericon" />
           <button
