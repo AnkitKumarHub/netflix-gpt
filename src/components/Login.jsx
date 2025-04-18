@@ -149,10 +149,15 @@ const Login = () => {
           {isSignInForm ? " Sign In" : "Sign Up"}{" "}
         </button>
         <p className="py-6 cursor-pointer" onClick={toggleSignInForm}>
-          {" "}
-          {isSignInForm
-            ? "New to Netflix? Sign up now."
-            : "Already registered? Sign In Now."}
+          {isSignInForm ? (
+            <>
+              New to Netflix? <u>Sign up </u>.
+            </>
+          ) : (
+            <>
+              Already registered? <u>Sign In</u>.
+            </>
+          )}
         </p>
       </form>
     </div>

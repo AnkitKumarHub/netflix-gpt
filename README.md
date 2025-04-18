@@ -116,3 +116,5 @@ this basically happens because of React App Strict Mode if you remove strict mod
 ANS => React does extra rendering of your component to check for some inconsisitency b/w your calls and this happens in development mode only and it will throw an error if any inconsistency is found.
 
 
+# Day-3 
+- GPT search feature 
