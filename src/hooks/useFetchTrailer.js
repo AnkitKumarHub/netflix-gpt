@@ -1,6 +1,6 @@
-import { useEffect, useSelector } from "react";
+import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTrailerVideo } from "../utils/moviesSlice";
 
 const useFetchTrailer = (movieId) => {

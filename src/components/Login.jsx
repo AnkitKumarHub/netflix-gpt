@@ -81,6 +81,7 @@ const Login = () => {
           setErrorMessage(errorCode + " : " + errorMessage);
         });
     } else {
+      //Sign In logic
       signInWithEmailAndPassword(
         auth,
         email.current.value,
@@ -102,18 +103,19 @@ const Login = () => {
   return (
     <div className="relative h-screen overflow-hidden">
       <Header />
-      <div className="absolute inset-0 ">
+      <div className="absolute h-full ">
         <img
-          className="w-full h-full object-cover"
+          className="h-screen object-cover md:w-screen md:h-145.6"
           src={Netflix_Background}
           alt="Logo"
         />
+        <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <form
         onSubmit={(e) => {
           e.preventDefault();
         }}
-        className="w-3/12 absolute p-12 bg-black my-50 mx-auto right-0 left-0 text-white rounded-lg opacity-80"
+        className="w-full  md:w-3/12 absolute p-12 bg-black my-35 mx-auto right-0 left-0 text-white rounded-lg opacity-80"
       >
         <h1 className="font-bold text-4xl py-6">
           {isSignInForm ? " Sign In" : "Sign Up"}
@@ -143,11 +145,24 @@ const Login = () => {
           {errorMessage}
         </p>
         <button
-          className="p-4 my-6 bg-red-600 w-full rounded-lg cursor-pointer"
+          className="p-4 my-4 bg-red-600 w-full rounded-lg cursor-pointer"
           onClick={handleButtonClick}
         >
           {isSignInForm ? " Sign In" : "Sign Up"}{" "}
         </button>
+        <h1 className="text-gray-200 text-center my-1">OR</h1>
+        {isSignInForm && (
+          <button className="my-4 p-4 w-full bg-[rgba(136,135,135,0.4)] hover:bg-[rgba(104,103,103,0.4)] rounded-[5px] font-semibold cursor-pointer text-white transition-all duration-300 ease-in-out shadow-lg">
+            Use a sign-in code
+          </button>
+        )}
+        <h1 className="text-gray-200 text-center my-1 cursor-pointer hover:underline hover:text-[rgba(225,221,221,0.87)]">
+          Forgot password?
+        </h1>
+        <label className="ml-6 mt-4 flex items-center gap-2.5">
+          <input type="checkbox" className="scale-150 cursor-pointer" />
+          Remember me
+        </label>
         <p className="py-6 cursor-pointer" onClick={toggleSignInForm}>
           {isSignInForm ? (
             <>
